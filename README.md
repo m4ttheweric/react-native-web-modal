@@ -14,6 +14,10 @@
   <br />
 </p>
 
+## Forked from:
+
+https://github.com/Dekoruma/react-native-web-modal/
+
 ---
 
 ## Announcement
@@ -43,7 +47,6 @@ If you want to use the enhanced version, install it with `npm install --save mod
 Since r-web-modal is an implemantion of the original react native modal, it works in a similar fashion with [react-native modal](https://facebook.github.io/react-native/docs/modal.html). But of course, some APIs are limited (not all props are suppported).
 
 ```javascript
-
 import React, { Component } from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
 
@@ -55,27 +58,29 @@ export default class Example extends Component {
   };
 
   setModalVisible(visible) {
-    this.setState({modalVisible: visible});
+    this.setState({ modalVisible: visible });
   }
 
   render() {
     return (
-      <View style={{marginTop: 22}}>
+      <View style={{ marginTop: 22 }}>
         <Modal
           animationType="slide"
           transparent={false}
           visible={this.state.modalVisible}
           onDismiss={() => {
             alert('Modal has been closed.');
-          }}>
-          <View style={{marginTop: 22}}>
+          }}
+        >
+          <View style={{ marginTop: 22 }}>
             <View>
               <Text>Hello World!</Text>
 
               <TouchableHighlight
                 onPress={() => {
                   this.setModalVisible(!this.state.modalVisible);
-                }}>
+                }}
+              >
                 <Text>Hide Modal</Text>
               </TouchableHighlight>
             </View>
@@ -85,7 +90,8 @@ export default class Example extends Component {
         <TouchableHighlight
           onPress={() => {
             this.setModalVisible(true);
-          }}>
+          }}
+        >
           <Text>Show Modal</Text>
         </TouchableHighlight>
       </View>
@@ -99,14 +105,14 @@ _Taken from [React Native Modal Example](https://facebook.github.io/react-native
 2. Modal Enhanced for React Native Web
 
 ```javascript
-import React, { Component } from "react";
-import { Text, TouchableOpacity, View, ScrollView } from "react-native";
+import React, { Component } from 'react';
+import { Text, TouchableOpacity, View, ScrollView } from 'react-native';
 
 import Modal from 'modal-enhanced-react-native-web';
 
 export default class Example extends Component {
   state = {
-    visibleModal: null
+    visibleModal: null,
   };
 
   _renderButton = (text, onPress) => (
@@ -120,17 +126,19 @@ export default class Example extends Component {
   _renderModalContent = () => (
     <View>
       <Text>Hello!</Text>
-      {this._renderButton("Close", () => this.setState({ visibleModal: false }))}
+      {this._renderButton('Close', () =>
+        this.setState({ visibleModal: false })
+      )}
     </View>
   );
 
-  _handleOnScroll = event => {
+  _handleOnScroll = (event) => {
     this.setState({
-      scrollOffset: event.nativeEvent.contentOffset.y
+      scrollOffset: event.nativeEvent.contentOffset.y,
     });
   };
 
-  _handleScrollTo = p => {
+  _handleScrollTo = (p) => {
     if (this.scrollViewRef) {
       this.scrollViewRef.scrollTo(p);
     }
@@ -139,7 +147,7 @@ export default class Example extends Component {
   render() {
     return (
       <View>
-        {this._renderButton("Modal that can be closed on backdrop press", () =>
+        {this._renderButton('Modal that can be closed on backdrop press', () =>
           this.setState({ visibleModal: true })
         )}
         <Modal
@@ -223,12 +231,12 @@ Take a look at [react-native-animatable](https://github.com/oblador/react-native
 
 ## Author
 
-* **Ray Andrew** - [Ray Andrew](https://github.com/rayandrews)
+- **Ray Andrew** - [Ray Andrew](https://github.com/rayandrews)
 
 ## Special Thanks
 
-* **Natan Elia** - [Natan Elia](https://github.com/natanelia)
-* **Louis David** - [Louis David](https://github.com/louvidc)
+- **Natan Elia** - [Natan Elia](https://github.com/natanelia)
+- **Louis David** - [Louis David](https://github.com/louvidc)
 
 ## License
 

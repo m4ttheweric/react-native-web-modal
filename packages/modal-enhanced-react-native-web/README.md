@@ -15,6 +15,11 @@
   <br />
   <a href="https://nodei.co/npm/modal-enhanced-react-native-web/"><img src="https://nodei.co/npm/modal-enhanced-react-native-web.png?downloads=true&downloadRank=true&stars=true"></a>
 </p>
+---
+
+## Forked from:
+
+https://github.com/Dekoruma/react-native-web-modal/
 
 ---
 
@@ -33,14 +38,14 @@ If you want to use the enhanced version, install it with `npm install --save mod
 Here's example code :
 
 ```javascript
-import React, { Component } from "react";
-import { Text, TouchableOpacity, View, ScrollView } from "react-native";
+import React, { Component } from 'react';
+import { Text, TouchableOpacity, View, ScrollView } from 'react-native';
 
 import Modal from 'modal-enhanced-react-native-web';
 
 export default class Example extends Component {
   state = {
-    visibleModal: null
+    visibleModal: null,
   };
 
   _renderButton = (text, onPress) => (
@@ -54,17 +59,19 @@ export default class Example extends Component {
   _renderModalContent = () => (
     <View>
       <Text>Hello!</Text>
-      {this._renderButton("Close", () => this.setState({ visibleModal: false }))}
+      {this._renderButton('Close', () =>
+        this.setState({ visibleModal: false })
+      )}
     </View>
   );
 
-  _handleOnScroll = event => {
+  _handleOnScroll = (event) => {
     this.setState({
-      scrollOffset: event.nativeEvent.contentOffset.y
+      scrollOffset: event.nativeEvent.contentOffset.y,
     });
   };
 
-  _handleScrollTo = p => {
+  _handleScrollTo = (p) => {
     if (this.scrollViewRef) {
       this.scrollViewRef.scrollTo(p);
     }
@@ -73,7 +80,7 @@ export default class Example extends Component {
   render() {
     return (
       <View>
-        {this._renderButton("Modal that can be closed on backdrop press", () =>
+        {this._renderButton('Modal that can be closed on backdrop press', () =>
           this.setState({ visibleModal: true })
         )}
         <Modal
@@ -157,12 +164,12 @@ Take a look at [react-native-animatable](https://github.com/oblador/react-native
 
 ## Author
 
-* **Ray Andrew** - [Ray Andrew](https://github.com/rayandrews)
+- **Ray Andrew** - [Ray Andrew](https://github.com/rayandrews)
 
 ## Special Thanks
 
-* **Natan Elia** - [Natan Elia](https://github.com/natanelia)
-* **Louis David** - [Louis David](https://github.com/louvidc)
+- **Natan Elia** - [Natan Elia](https://github.com/natanelia)
+- **Louis David** - [Louis David](https://github.com/louvidc)
 
 ## License
 

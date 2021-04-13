@@ -15,6 +15,11 @@
   <br />
   <a href="https://nodei.co/npm/modal-react-native-web/"><img src="https://nodei.co/npm/modal-react-native-web.png?downloads=true&downloadRank=true&stars=true" /></a>
 </p>
+---
+
+## Forked from:
+
+https://github.com/Dekoruma/react-native-web-modal/
 
 ---
 
@@ -35,7 +40,6 @@ Since react native web modal is an implementation of the original react native m
 Here's example code:
 
 ```javascript
-
 import React, { Component } from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
 
@@ -47,27 +51,29 @@ export default class Example extends Component {
   };
 
   setModalVisible(visible) {
-    this.setState({modalVisible: visible});
+    this.setState({ modalVisible: visible });
   }
 
   render() {
     return (
-      <View style={{marginTop: 22}}>
+      <View style={{ marginTop: 22 }}>
         <Modal
           animationType="slide"
           transparent={false}
           visible={this.state.modalVisible}
           onDismiss={() => {
             alert('Modal has been closed.');
-          }}>
-          <View style={{marginTop: 22}}>
+          }}
+        >
+          <View style={{ marginTop: 22 }}>
             <View>
               <Text>Hello World!</Text>
 
               <TouchableHighlight
                 onPress={() => {
                   this.setModalVisible(!this.state.modalVisible);
-                }}>
+                }}
+              >
                 <Text>Hide Modal</Text>
               </TouchableHighlight>
             </View>
@@ -77,7 +83,8 @@ export default class Example extends Component {
         <TouchableHighlight
           onPress={() => {
             this.setModalVisible(true);
-          }}>
+          }}
+        >
           <Text>Show Modal</Text>
         </TouchableHighlight>
       </View>
@@ -145,12 +152,12 @@ _Taken from [React Native Modal Example](https://facebook.github.io/react-native
 
 ## Author
 
-* **Ray Andrew** - [Ray Andrew](https://github.com/rayandrews)
+- **Ray Andrew** - [Ray Andrew](https://github.com/rayandrews)
 
 ## Special Thanks
 
-* **Natan Elia** - [Natan Elia](https://github.com/natanelia)
-* **Louis David** - [Louis David](https://github.com/louvidc)
+- **Natan Elia** - [Natan Elia](https://github.com/natanelia)
+- **Louis David** - [Louis David](https://github.com/louvidc)
 
 ## License
 

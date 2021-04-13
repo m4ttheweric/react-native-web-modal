@@ -1,9 +1,9 @@
 {
-  "name": "modal-enhanced-react-native-web",
-  "version": "0.2.0",
+  "name": "@m4ttheweric/modal-enhanced-react-native-web",
+  "version": "0.2.1",
   "description": "React native modal enhanced for web",
   "main": "dist/index.js",
-  "repository": "https://github.com/Dekoruma/react-native-web-modal/tree/master/packages/modal-enhanced-react-native-web",
+  "repository": "https://github.com/m4ttheweric/react-native-web-modal/tree/master/packages/modal-enhanced-react-native-web",
   "author": "Ray Andrew <raydreww@gmail.com>",
   "license": "MIT",
   "private": false,

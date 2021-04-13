@@ -13,7 +13,7 @@
   This repository contains NPM Packages for Enhanced Modal for React Native Web
   <br />
   <br />
-  <a href="https://nodei.co/npm/modal-enhanced-react-native-web/"><img src="https://nodei.co/npm/modal-enhanced-react-native-web.png?downloads=true&downloadRank=true&stars=true"></a>
+  <a href="https://www.npmjs.com/package/@m4ttheweric/modal-enhanced-react-native-web"><img src="https://nodei.co/npm/modal-enhanced-react-native-web.png?downloads=true&downloadRank=true&stars=true"></a>
 </p>
 
 ---
@@ -128,7 +128,7 @@ Take a look at [react-native-animatable](https://github.com/oblador/react-native
       <a href="https://nodei.co/npm/modal-react-native-web/"><img src="https://nodei.co/npm/modal-react-native-web.png?downloads=true&downloadRank=true&stars=true" /></a>
     </td>
     <td align="center">
-      <a href="https://nodei.co/npm/modal-enhanced-react-native-web/"><img src="https://nodei.co/npm/modal-enhanced-react-native-web.png?downloads=true&downloadRank=true&stars=true" /></a>
+      <a href="https://www.npmjs.com/package/@m4ttheweric/modal-enhanced-react-native-web"><img src="https://nodei.co/npm/modal-enhanced-react-native-web.png?downloads=true&downloadRank=true&stars=true" /></a>
     </td>
   </tr>
   <tr>

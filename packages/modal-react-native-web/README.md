@@ -13,7 +13,7 @@
   This repository contains NPM Packages for React Native Modal Implementation for Web
   <br />
   <br />
-  <a href="https://nodei.co/npm/modal-react-native-web/"><img src="https://nodei.co/npm/modal-react-native-web.png?downloads=true&downloadRank=true&stars=true" /></a>
+  <a href="https://nodei.co/npm/@mattheweric/modal-react-native-web/"><img src="https://nodei.co/npm/modal-react-native-web.png?downloads=true&downloadRank=true&stars=true" /></a>
 </p>
 
 ---

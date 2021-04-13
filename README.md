@@ -14,6 +14,8 @@
   <br />
 </p>
 
+---
+
 ## Forked from:
 
 https://github.com/Dekoruma/react-native-web-modal/
